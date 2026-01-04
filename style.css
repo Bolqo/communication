@@ -7,6 +7,8 @@
     --primary-cyan: #06b6d4;
     --primary-orange: #f97316;
     --primary-red: #ef4444;
+    --primary-green: rgb(110, 216, 53);
+    --primary-yellow: yellow;
     
     --glass-surface: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.08);
@@ -335,15 +337,52 @@ body {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--primary-cyan);
+    color: var(--primary-green);
+}
+.interaction-hint span.orange {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-orange);
+}
+.interaction-hint span.red {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-red);
 }
 
-.pulse-dot {
+.pulse-dot-com {
     width: 8px;
     height: 8px;
-    background: var(--primary-cyan);
+    background: var(--primary-green);
     border-radius: 50%;
     box-shadow: 0 0 10px var(--primary-cyan);
+    animation: pulse 1.5s infinite;
+}
+.pulse-dot-miscom {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-orange);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-orange);
+    animation: pulse 1.5s infinite;
+}
+.pulse-dot-miscom2 {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-yellow);
+    animation: pulse 1.5s infinite;
+}
+
+.pulse-dot-conf {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-red);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-red);
     animation: pulse 1.5s infinite;
 }
 
